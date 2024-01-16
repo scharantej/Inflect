@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Word Inflection Results</title>
+</head>
+<body>
+<h1>Word Inflection Results</h1>
+<table>
+<thead>
+<tr>
+<th>Inflection</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+{% for inflection, example in zip(inflections, examples) %}
+<tr>
+<td>{{ inflection }}</td>
+<td>{{ example }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
